@@ -1,17 +1,15 @@
 #include <stdio.h>
-#define _USE_MATH_DEFINES
-#include <math.h>
+//#define _USE_MATH_DEFINES
+//#define M_PI 3.14159265
+//#include <math.h>
 
 int main(void) {
 
-    double a,v0,h,g=9.81;
+    double m, h;
 
-    scanf("%lf%lf",&a,&v0);
+    scanf("%lf%lf", &m, &h);
 
-    double arad=a*(M_PI / 180.0);
-    h=(v0*v0*sin(arad)*sin(arad)/(2*g));
-    
-    printf("Максимальная высота подъема %lf м\n", h);
+    printf("%lf\n", m/(h*h));
     
     return 0;
 }
